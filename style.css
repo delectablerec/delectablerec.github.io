@@ -1,0 +1,156 @@
+/* Impostazioni base */
+body {
+font-family: 'Roboto', sans-serif;
+margin: 20px; /* il margine è lo spazio esterno */
+padding: 0; /* il padding è lo spazio interno */
+line-height: 1.6; /* altezza della linea */
+background-color: #f9f9f9;
+color: #333333;
+}
+
+/* NAVBAR */
+nav {
+background-color: #333333;
+padding: 10px;
+text-align: center; /* altri valori: left, right, justify */
+}
+
+nav a {
+text-decoration: none;
+margin: 0 15px 25px;
+font-weight: bold;
+color: #ffffff;
+transition: color 0.5s;
+}
+
+nav a:hover {
+color: #0066cc;
+}
+
+/* SEZIONI */
+section {
+padding: 40px 20px;
+background-color: #ffffff;
+border-bottom: 1px solid #999999; /* altri valori: dotted, dashed, double, groove, inset, outset */
+}
+
+section:nth-child(even) {
+    background-color: #f0f0f0; /* nth-child seleziona gli elementi in base alla loro posizione */
+}
+
+/* TITOLI */
+h1, h2, h3, h4 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+/* PARAGRAFI */
+p {
+    margin: 1em 0; /* em è l'unità di misura relativa alla dimensione del font cioè 1em = 16px */
+}
+
+/* LISTE */
+ul, ol {
+    margin-left: 1em;
+}
+
+/* LINK */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+}
+a:hover {
+    text-decoration: none;
+    color: #003366;
+}
+
+/* HEADER */
+header {
+    position: sticky; /* sticky permette di mantenere l'header visibile durante lo scroll */
+    top: 0; /* top specifica la distanza dal bordo superiore della pagina */
+    z-index:100; /* z-index specifica l'ordine di sovrapposizione degli elementi */
+    background-color: white;
+    border-bottom: 1px solid #ccc; /* gli attributi rappresentano spessore tipo colore */
+}
+
+/* MAIN */
+main {
+    max-width: 600px;
+    margin: auto; /* margin auto centra l'elemento verticalmente e orizzontalmente */
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em; /* em è l'unità di misura relativa alla dimensione del font */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* stili tabella */
+table {
+    width: 100%;
+    border-collapse: collapse; /* rimuove gli spazi tra le celle */
+    margin: 20px 0;
+    background-color: #ffffff;
+    border: #0066cc 1px solid;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* stile personalizzato */
+/* uso lo stile con il . perche nell html ho usato class="" */
+/* uso lo stile con il # perche nell html ho usato id="" */
+
+.box1 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.btn-primary {
+  background-color: #ff36ab !important;
+}
+
+.btn-secondary {
+  background-color: #a217ff !important;
+}
+
+.btn-custom {
+  background-color: #b3ff00 !important;
+}
+
+#box4 {
+    background-color: orange;
+}
+
+div {
+    border: 1px solid #000;
+}
+/* Tablet grande (max-width: 1200px) */
+@media (max-width: 1200px) {
+    body {
+        background-color: rgb(23, 169, 218);
+    }
+}
+
+/* Tablet piccolo (max-width: 992px) */
+@media (max-width: 992px) {
+    body {
+        background-color: rgb(16, 204, 16);
+    }
+}
